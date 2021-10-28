@@ -39,7 +39,7 @@ class Button extends HTMLElement {
     buttonContainer.appendChild(button);
     this.shadow.appendChild(buttonContainer);
 
-    if (location.pathname == "/desafio-m5/home") {
+    if (location.pathname == "/8des-m5/home") {
       return (button.textContent = "Empezar");
     } else if (location.pathname == "/instructions") {
       return (button.textContent = "Jugar!");

@@ -55,7 +55,7 @@ export function goTo(container: Element, path) {
 
 export function initRouter(container: Element) {
   if (location.host.includes("github.io")) {
-      goTo(container, "/desafio-m5/home");
+      goTo(container, "/8des-m5/home");
   } else {
     routeHandler(location.pathname, container);
   }
@@ -64,5 +64,5 @@ export function initRouter(container: Element) {
 // hago que la app cargue desde el inicio si hacen refresh o ponen una url invalida
 window.addEventListener("load", () => {
   const test = document.querySelector(".root");
-  goTo(test, "/desafio-m5/home");
+  goTo(test, "/8des-m5/home");
 });
