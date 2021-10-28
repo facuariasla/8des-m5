@@ -1,0 +1,13 @@
+{
+  "name": "8des-m5",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "latest"
+  },
+  "scripts": {
+    "dev": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html --dist-dir build",
+    "deploy": "gh-pages -d dist"
+  }
+}

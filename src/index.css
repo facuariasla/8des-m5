@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+/* font-family: 'Special Elite', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+/* font-family: 'Odibee Sans', cursive; */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #002;
+  font-family: 'Odibee Sans', cursive;
+  margin: 0;
+
+}
