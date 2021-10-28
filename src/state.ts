@@ -24,14 +24,12 @@ const state = {
   getHistory() {
     return this.winner;
   },
-  // Guardo la jugada del jugador y de la maquina en el state
   setGame(playerPlay: Play, machinePlay: Play) {
     const lastState = this.getState();
     lastState.gameState.yourPlay = playerPlay;
     lastState.gameState.machinePlay = machinePlay;
     this.setState(lastState);
   },
-  // Declara la lógica para saber quién ganó, y lo devuelve
   whoWins(playerPlay: Play, computerPlay: Play) {
     const winningOutcomes = [
       { myPlay: "piedra", computerPlay: "tijera" },
