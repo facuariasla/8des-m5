@@ -42,23 +42,23 @@ class Hands extends HTMLElement {
     piedra.setAttribute("src", piedraImg);
     stone.appendChild(piedra);
 
-    const papper = document.createElement("button");
-    papper.setAttribute("class", "custom-button");
-    papper.setAttribute("id", "papel");
+    const paper = document.createElement("button");
+    paper.setAttribute("class", "custom-button");
+    paper.setAttribute("id", "papel");
     const papel = document.createElement("img");
     papel.setAttribute("src", papelImg);
-    papper.appendChild(papel);
+    paper.appendChild(papel);
 
-    const sissors = document.createElement("button");
-    sissors.setAttribute("class", "custom-button");
-    sissors.setAttribute("id", "tijera");
+    const scissors = document.createElement("button");
+    scissors.setAttribute("class", "custom-button");
+    scissors.setAttribute("id", "tijera");
     const tijeras = document.createElement("img");
     tijeras.setAttribute("src", tijerasImg);
-    sissors.appendChild(tijeras);
+    scissors.appendChild(tijeras);
 
     div.appendChild(stone);
-    div.appendChild(papper);
-    div.appendChild(sissors);
+    div.appendChild(paper);
+    div.appendChild(scissors);
 
     this.shadow.appendChild(div);
 
@@ -74,7 +74,7 @@ class Hands extends HTMLElement {
       });
       this.dispatchEvent(event);
     });
-    papper.addEventListener("click", (e: any) => {
+    paper.addEventListener("click", (e: any) => {
       let id: string;
       if (e.path[1].id == "") {
         id = e.path[0].id;
@@ -86,7 +86,7 @@ class Hands extends HTMLElement {
       });
       this.dispatchEvent(event);
     });
-    sissors.addEventListener("click", (e: any) => {
+    scissors.addEventListener("click", (e: any) => {
       let id: string;
       if (e.path[1].id == "") {
         id = e.path[0].id;

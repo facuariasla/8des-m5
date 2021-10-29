@@ -29,12 +29,10 @@ export function initShowMovesPage(containerEl: Element) {
   const papelImg = require("url:../../assets/fig-note.svg");
   const tijerasImg = require("url:../../assets/fig-scissors.svg");
 
-  //obtengo la jugada
   const play = state.getState();
   const computerPlay = play.gameState.machinePlay;
   const playerPlay = play.gameState.yourPlay;
 
-  //selecciono la jugada y la muestro
   const machineImgSelector = (machinePlay) => {
     if (machinePlay == "piedra") return piedraImg;
     if (machinePlay == "papel") return papelImg;

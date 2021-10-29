@@ -1,4 +1,4 @@
-type Play = "stone" | "papper" | "sissors" | string;
+type Play = "stone" | "paper" | "scissors" | string;
 
 const state = {
   data: {
